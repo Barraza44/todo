@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+header{
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
 header svg {
   width: 42px;
   height: 42px;
