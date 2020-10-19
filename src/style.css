@@ -10,6 +10,12 @@ header{
 }
 
 header svg {
-  width: 42px;
-  height: 42px;
+  width: 2.8em;
+  height: 2.8em;
+}
+
+header h1 {
+  font-family: Dosis, sans-serif;
+  font-size: 3em;
+  margin: 15px 0;
 }
