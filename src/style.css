@@ -27,3 +27,17 @@ main{
   grid-template-columns: repeat(4, 350px);
   grid-gap: 20px;
 }
+
+.projects {
+  display: none;
+}
+
+.aside-shown {
+  background: linear-gradient(172.12deg, #1FC3DA 1.87%, #33C8CF 47.23%, #AAE68B 99.51%);
+  position: absolute;
+  width: 350px;
+  height: 900px;
+  z-index: 10;
+  border-radius: 25px;
+  top: 10px;
+}
