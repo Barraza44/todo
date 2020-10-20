@@ -26,6 +26,7 @@ main{
   display: grid;
   grid-template-columns: repeat(4, 350px);
   grid-gap: 20px;
+  margin-top: 50px;
 }
 
 .projects {
@@ -40,4 +41,17 @@ main{
   z-index: 10;
   border-radius: 25px;
   top: 10px;
+}
+
+.card {
+  width: 318px;
+  height: 348px;
+  background: #FAFAFA;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+
+.card svg {
+  width: 36px;
+  height: 36px;
 }
