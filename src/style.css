@@ -29,6 +29,10 @@ main{
   margin-top: 50px;
 }
 
+button {
+  font-family: Dosis, sans-serif;
+}
+
 .projects {
   display: none;
 }
@@ -54,4 +58,17 @@ main{
 .card svg {
   width: 36px;
   height: 36px;
+}
+
+.card button {
+  width: 132px;
+  height: 37px;
+  background: #FAFAFA;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
+  border: 1px ghostwhite solid;
+  border-radius: 10px;
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  font-size: 18px;
 }
