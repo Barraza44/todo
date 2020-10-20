@@ -7,15 +7,23 @@ header{
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  border-radius: 25px;
 }
 
 header svg {
   width: 2.8em;
   height: 2.8em;
+  margin: 0 10px;
 }
 
 header h1 {
   font-family: Dosis, sans-serif;
   font-size: 3em;
   margin: 15px 0;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 350px);
+  grid-gap: 20px;
 }
