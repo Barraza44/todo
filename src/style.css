@@ -72,3 +72,16 @@ button {
   float: right;
   margin-right: 20px;
 }
+
+.card h2 {
+  font-family: Dosis, sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.form-container {
+  width: 580px;
+  height: 580px;
+  padding: 50px;
+}
