@@ -14,6 +14,12 @@ class DOM {
     projectTab.setAttribute("class", "projects");
     body.classList.remove("body-h");
   }
+
+  public static showFormContainer() {
+    const formContainer = document.querySelector(".form-container");
+    formContainer.setAttribute("class", "form-container-shown");
+    body.classList.add("body-h");
+  }
 }
 
 

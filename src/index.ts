@@ -12,6 +12,10 @@ menuIcon.addEventListener("click", () => {
 
 main.addEventListener("click", () => {
   DOM.hideProjectTab();
-})
+});
+
+addIcon.addEventListener("click", () => {
+  DOM.showFormContainer();
+});
 
 export { addIcon, menuIcon, main }
