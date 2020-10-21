@@ -1,5 +1,6 @@
 import "./style.css";
 import { DOM } from "./dom";
+import {ToDo} from "./to-doClass";
 
 const body = document.body;
 const main = document.querySelector("main");
