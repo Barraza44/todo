@@ -7,6 +7,11 @@ class DOM {
     projectTab.setAttribute("class", "projects-shown");
     body.classList.add("body-h");
   }
+  public static hideProjectTab() {
+    const projectTab = document.querySelector(".projects-shown");
+    projectTab.setAttribute("class", "projects");
+    body.classList.remove("body-h");
+  }
 }
 
 
