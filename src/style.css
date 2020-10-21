@@ -48,7 +48,7 @@ button {
   display: none;
 }
 
-.aside-shown {
+.projects-shown {
   background: linear-gradient(172.12deg, #1FC3DA 1.87%, #33C8CF 47.23%, #AAE68B 99.51%);
   position: absolute;
   width: 350px;
