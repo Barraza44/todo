@@ -45,6 +45,7 @@ class DOM {
 
     const dateContainer = document.createElement("div");
     cardContainer.appendChild(dateContainer);
+    dateContainer.setAttribute("class", "card-date");
     const dateIcon = calendar.cloneNode(true);
     dateContainer.appendChild(dateIcon);
     const dateText = document.createElement("p");
@@ -52,7 +53,7 @@ class DOM {
     dateContainer.appendChild(dateText);
 
     const seeMoreBtn = document.createElement("button");
-    seeMoreBtn.setAttribute("class", "see");
+    seeMoreBtn.textContent = "See more";
     cardContainer.appendChild(seeMoreBtn);
 
     const deleteBtn = remove.cloneNode(true);
