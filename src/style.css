@@ -80,8 +80,33 @@ button {
   line-height: 40px;
 }
 
+.card-text {
+  padding: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+}
+
 .form-container {
+  position: absolute;
+  box-sizing: border-box;
+  display: block;
   width: 580px;
   height: 580px;
   padding: 50px;
+}
+
+form{
+  width: 100%;
+}
+.title-wrapper{
+  width: 100%;
+}
+form label {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 24px;
+}
+
+#todo-title {
+  width: 100%;
+  margin: 10px 0;
 }
