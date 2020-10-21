@@ -119,11 +119,14 @@ button {
 
 .form-container {
   position: absolute;
+  left: 32%;
+  bottom: 80px;
   box-sizing: border-box;
   display: block;
   width: 580px;
   height: 580px;
   padding: 50px;
+  margin:0 auto;
 }
 
 form{
