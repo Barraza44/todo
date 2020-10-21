@@ -59,6 +59,17 @@ class DOM {
     const deleteBtn = remove.cloneNode(true);
     cardContainer.appendChild(deleteBtn);
 
+    switch (todo.priority) {
+      case "Low":
+        cardTitle.style.color = "#1FC3DA";
+        break;
+      case "Medium":
+        cardTitle.style.color = "#FFCC81";
+        break;
+      case "High":
+        cardTitle.style.color = "#DD5E11";
+        break;
+    }
   }
 }
 
