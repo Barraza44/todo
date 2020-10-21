@@ -16,6 +16,10 @@ header svg {
   margin: 0 10px;
 }
 
+.menu, .add-proj, .calendar, .delete {
+  cursor: pointer;
+}
+
 header h1 {
   font-family: Dosis, sans-serif;
   font-size: 3em;
