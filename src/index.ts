@@ -1,7 +1,7 @@
 import "./style.css";
 import { DOM } from "./dom";
 
-const body = document.querySelector("body");
+const body = document.body;
 const main = document.querySelector("main");
 const addIcon = document.querySelector(".add-proj");
 const menuIcon = document.querySelector(".menu");
@@ -24,4 +24,4 @@ cancelButton.addEventListener("click", () => {
   DOM.hideFormContainer();
 });
 
-export { addIcon, menuIcon, main }
+export { addIcon, menuIcon, main, body}
