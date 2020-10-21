@@ -33,6 +33,10 @@ main{
   margin-top: 50px;
 }
 
+.body-h {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 button {
   font-family: Dosis, sans-serif;
   width: 132px;
