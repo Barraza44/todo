@@ -92,7 +92,7 @@ button {
   margin: 15px 10px;
   min-height: 115px;
   max-height: 115px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .card-date {
