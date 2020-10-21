@@ -13,6 +13,7 @@ menuIcon.addEventListener("click", () => {
 
 main.addEventListener("click", () => {
   DOM.hideProjectTab();
+  DOM.hideFormContainer();
 });
 
 addIcon.addEventListener("click", () => {
