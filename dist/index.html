@@ -66,18 +66,20 @@
     <label for="todo-description">Description</label>
     <textarea name="description" id="todo-description" cols="30" rows="10">    Write your description...
         </textarea>
-    <label for="todo-priority">Priority</label>
-    <br>
+    <div class="opt">
+    <label id="priority" for="todo-priority">Priority</label>
     <select name="priority" id="todo-priority">
       <option value="Low">Low</option>
       <option value="Medium">Medium</option>
       <option value="High">High</option>
     </select>
+    </div>
+    <div class="date">
     <label for="todo-date">Due date</label>
-    <br>
     <input type="date" name="date" id="todo-date">
+    </div>
   </form>
-  <button class="card-button">Add</button>
+  <button class="card-button" id="add">Add</button>
   <button class="card-button">Cancel</button>
 </div>
 </body>
