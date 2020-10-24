@@ -1,4 +1,4 @@
-import {main, body} from "./index";
+import {main, body, currentProject} from "./index";
 import {ToDo} from "./to-doClass";
 
 
@@ -33,6 +33,7 @@ class DOM {
     const cardContainer = document.createElement("div");
     main.appendChild(cardContainer);
     cardContainer.setAttribute("class", "card");
+    cardContainer.setAttribute("id", `${todo.index}`);
 
     const cardTitle = document.createElement("h2");
     cardTitle.textContent = todo.title;
@@ -57,6 +58,8 @@ class DOM {
     cardContainer.appendChild(seeMoreBtn);
 
     const deleteBtn = remove.cloneNode(true);
+    // @ts-ignore
+    deleteBtn.bind(todo);
     cardContainer.appendChild(deleteBtn);
 
     switch (todo.priority) {
@@ -70,6 +73,11 @@ class DOM {
         cardTitle.style.color = "#DD5E11";
         break;
     }
+  }
+
+  public static removeTodo(index: number) {
+    let removed = document.querySelector(`#${index}`);
+    removed.parentElement.removeChild(removed);
   }
 }
 
