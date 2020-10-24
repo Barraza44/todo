@@ -125,11 +125,11 @@ button {
   margin-top: 30px;
 }
 
-.form-container{
+.form-container, .form-container-edit{
   display: none;
 }
 
-.form-container-shown {
+.form-container-shown,.form-container-edit-shown {
   position: absolute;
   left: 32%;
   bottom: 80px;
@@ -156,7 +156,7 @@ form label {
   font-size: 24px;
 }
 
-#todo-title {
+#todo-title, #todo-title-current {
   width: 100%;
   margin: 10px 0;
   height: 22px;
@@ -176,10 +176,10 @@ textarea {
   flex-flow: column nowrap;
 }
 
-#todo-date, #todo-priority {
+#todo-date, #todo-priority, #todo-date-current, #todo-priority-current {
   margin: 15px 0;
 }
 
-#add {
+#add, #done {
   margin-right: 200px;
 }

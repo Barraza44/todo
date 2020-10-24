@@ -6,7 +6,7 @@ const projectTab = document.querySelector(".projects");
 const formContainer = document.querySelector(".form-container");
 const calendar = document.querySelector(".calendar");
 const remove = document.querySelector(".delete");
-
+const editContainer = document.querySelector(".form-container-edit");
 
 class DOM {
   public static showProjectTab() {
@@ -26,6 +26,16 @@ class DOM {
 
   public static hideFormContainer() {
     formContainer.setAttribute("class", "form-container");
+    body.classList.remove("body-h");
+  }
+
+  public static showEditContainer() {
+    editContainer.setAttribute("class", "form-container-edit-shown");
+    body.classList.add("body-h");
+  }
+
+  public static hideEditContainer() {
+    editContainer.setAttribute("class", "form-container-edit");
     body.classList.remove("body-h");
   }
 

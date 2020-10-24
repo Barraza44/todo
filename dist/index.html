@@ -84,5 +84,29 @@
   <button class="card-button" id="add">Add</button>
   <button class="card-button" id="cancel">Cancel</button>
 </div>
+<div class="form-container-edit">
+  <form>
+    <div class="title-wrapper">
+      <label for="todo-title-current">Title</label>
+      <input type="text" name="title" id="todo-title-current">
+    </div>
+    <label for="todo-description-current">Description</label>
+    <textarea name="description" id="todo-description-current" cols="30" rows="10">    Write your description...
+        </textarea>
+    <div class="opt">
+      <label id="priority-current" for="todo-priority-current">Priority</label>
+      <select name="priority" id="todo-priority-current">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+    <div class="date">
+      <label for="todo-date-current">Due date</label>
+      <input type="date" name="date" id="todo-date-current">
+    </div>
+  </form>
+  <button class="card-button" id="done">Done</button>
+</div>
 </body>
 </html>
