@@ -37,5 +37,8 @@ function createProject(name: string) {
   currentProject = myProject;
 }
 
+addButton.addEventListener("click", () =>{
+  currentProject.createTodo()
+})
 
 export { addIcon, menuIcon, main, body, currentProject }
