@@ -66,6 +66,9 @@ class DOM {
     const seeMoreBtn = document.createElement("button");
     seeMoreBtn.textContent = "See more";
     cardContainer.appendChild(seeMoreBtn);
+    seeMoreBtn.addEventListener("click", () => {
+      todo.editTodo(todo);
+    })
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
