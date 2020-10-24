@@ -37,6 +37,8 @@ function createProject(name: string) {
   currentProject = myProject;
 }
 
+createProject("default");
+
 addButton.addEventListener("click", () =>{
   currentProject.createTodo()
 })

@@ -1,3 +1,5 @@
+import Project from "./project";
+
 class ToDo {
   public priority: string;
   public title: string;

@@ -33,7 +33,7 @@ class DOM {
     const cardContainer = document.createElement("div");
     main.appendChild(cardContainer);
     cardContainer.setAttribute("class", "card");
-    cardContainer.setAttribute("id", `${todo.index}`);
+    cardContainer.setAttribute("id", `index-${todo.index}`);
 
     const cardTitle = document.createElement("h2");
     cardTitle.textContent = todo.title;
@@ -57,10 +57,13 @@ class DOM {
     seeMoreBtn.textContent = "See more";
     cardContainer.appendChild(seeMoreBtn);
 
-    const deleteBtn = remove.cloneNode(true);
-    // @ts-ignore
-    deleteBtn.bind(todo);
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
     cardContainer.appendChild(deleteBtn);
+    deleteBtn.dataset.todoIndex = `${todo.index}`;
+    deleteBtn.addEventListener("click", ()=>{
+      currentProject.removeTodo(todo);
+    });
 
     switch (todo.priority) {
       case "Low":
@@ -76,7 +79,7 @@ class DOM {
   }
 
   public static removeTodo(index: number) {
-    let removed = document.querySelector(`#${index}`);
+    let removed = document.querySelector(`#index-${index}`);
     removed.parentElement.removeChild(removed);
   }
 }

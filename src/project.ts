@@ -21,6 +21,12 @@ class Project {
     DOM.renderCard(myTodo);
     DOM.hideFormContainer();
   }
+
+  public removeTodo(todo: ToDo) {
+    let index = todo.index;
+    this.todos.splice(index, 1);
+    DOM.removeTodo(index);
+  }
 }
 
 
