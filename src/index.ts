@@ -1,6 +1,7 @@
 import "./style.css";
 import { DOM } from "./dom";
 import {ToDo} from "./to-doClass";
+import Project from "./project";
 
 const body = document.body;
 const main = document.querySelector("main");
@@ -8,6 +9,8 @@ const addIcon = document.querySelector(".add-proj");
 const menuIcon = document.querySelector(".menu");
 const cancelButton = document.querySelector("#cancel");
 const addButton = document.querySelector("#add");
+
+let currentProject:Project = undefined;
 
 menuIcon.addEventListener("click", () => {
   DOM.showProjectTab();
@@ -26,22 +29,13 @@ cancelButton.addEventListener("click", () => {
   DOM.hideFormContainer();
 });
 
-let todoList = [];
+const projectList: Array<object> = []
 
-function CreateTodo(){
-  const title = document.querySelector("#todo-title");
-  const description = document.querySelector("#todo-description");
-  const priority = document.querySelector("#todo-priority");
-  const dueDate = document.querySelector("#todo-date");
-
-  // @ts-ignore
-  let myTodo = new ToDo(title.value, description.value, priority.value, dueDate.value);
-  todoList.push(myTodo);
-  myTodo.index = todoList.indexOf(myTodo);
-  DOM.renderCard(myTodo);
-  DOM.hideFormContainer();
+function createProject(name: string) {
+  let myProject = new Project(name);
+  projectList.push(myProject);
+  currentProject = myProject;
 }
 
-addButton.addEventListener("click", CreateTodo);
 
-export { addIcon, menuIcon, main, body}
+export { addIcon, menuIcon, main, body, currentProject }
