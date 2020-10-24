@@ -1,12 +1,17 @@
 import { ToDo } from "./to-doClass";
 import { DOM } from "./dom";
+import {currentProject } from "./index";
 
 class Project {
   public name: string;
-  public todos: object[];
-  constructor(name: string) {
+  public todos: ToDo[];
+  private binder: HTMLButtonElement;
+  
+  constructor(name: string, binder: HTMLButtonElement) {
     this.name = name;
     this.todos = [];
+    this.binder = binder
+    binder.onclick = this.switchProject.bind(this);
   }
   public createTodo() {
     const title = document.querySelector("#todo-title");
@@ -26,6 +31,16 @@ class Project {
     let index = todo.index;
     this.todos.splice(index, 1);
     DOM.removeTodo(index);
+  }
+  
+  public switchProject() {
+    DOM.deRender();
+    // @ts-ignore
+    currentProject = this;
+    DOM.hideProjectTab();
+    for(const todo of this.todos) {
+      DOM.renderCard(todo);
+    }
   }
 }
 

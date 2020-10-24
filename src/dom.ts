@@ -82,6 +82,11 @@ class DOM {
     let removed = document.querySelector(`#index-${index}`);
     removed.parentElement.removeChild(removed);
   }
+
+  public static deRender() {
+    let cards = document.querySelectorAll(".card");
+    cards.forEach(card => card.remove());
+  }
 }
 
 
